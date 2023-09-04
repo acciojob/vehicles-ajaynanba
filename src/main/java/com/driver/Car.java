@@ -68,28 +68,28 @@ public class Car extends Vehicle {
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
         super(name);
-        this.gears = gears;
         this.wheels = wheels;
-        this.doors = doors;
-        this.isManual = isManual;
         this.type = type;
+        this.doors = doors;
+        this.gears = gears;
+        this.isManual = isManual;
         this.currentGear = 1;
         this.seats = seats;
     }
-    public Car(String name, boolean isManual){
-        super(name);
-        this.isManual = isManual;
-    }
-    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type) {
-        //Hint: Car extends Vehicle
-        super(name);
-        this.wheels=wheels;
-        this.doors=doors;
-        this.gears=gears;
-        this.isManual=isManual;
-        this.type=type;
-        this.currentGear=1;
-    }
+//    public Car(String name, boolean isManual){
+//        super(name);
+//        this.isManual = isManual;
+//    }
+//    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type) {
+//        //Hint: Car extends Vehicle
+//        super(name);
+//        this.wheels=wheels;
+//        this.doors=doors;
+//        this.gears=gears;
+//        this.isManual=isManual;
+//        this.type=type;
+//        this.currentGear=1;
+//    }
 
     public void changeGear(int newGear){
         this.currentGear = newGear;
